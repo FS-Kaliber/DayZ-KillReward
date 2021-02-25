@@ -2,7 +2,7 @@
 
 Reward system for player and zombie kills
 
-- Notification of player rewards and zombie kills.
+- Notification of Player rewards and Zombie kills.
 - Hunting payments for hunting animals (wolves, bears, deer, deer, wild boars).
 - Various gift boxes
 - Gift boxes adjustable.
@@ -13,5 +13,8 @@ Reward system for player and zombie kills
 - Weapon boxes can be assigned to the zombie kills 20 boxes can be set.
 - Mod weapons can be added.
 - 3 Different authorization types Text Chat - CF - VPPNotification
-- Key "J" for the Rill Reward menu
+- Key "J" for the KillReward menu
+- Key "B" for the Leaderboard
+
+
 A lot of setting options!
