@@ -18,3 +18,5 @@ Reward system for player and zombie kills
 
 
 A lot of setting options!
+
+Support via [PayPal](https://www.paypal.com/donate/?hosted_button_id=YSKM4B8749N3Q)
