@@ -1,0 +1,374 @@
+FrameWidgetClass rootFrame {
+ keepsafezone 0
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass PanelWidget {
+   ignorepointer 1
+   color 0 0 0 0.502
+   size 800 600
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   scaled 1
+   draggable 1
+   style UIDefaultPanel
+   {
+    ImageWidgetClass KRImage {
+     visible 1
+     disabled 0
+     clipchildren 0
+     ignorepointer 0
+     keepsafezone 0
+     position 0 0
+     size 800 600
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     scaled 1
+     image0 ""
+     mode blend
+     "src alpha" 1
+     "no wrap" 1
+     stretch 1
+    }
+    FrameWidgetClass KRFrame {
+     visible 1
+     color 0 0 0 0
+     position 207.24799 213.526
+     size 49.6992 23.4736
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     {
+      RichTextWidgetClass KRPlayerKills {
+       clipchildren 0
+       inheritalpha 0
+       ignorepointer 0
+       keepsafezone 0
+       position 0.00301 0.00718
+       size 0.97244 0.92868
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scaled 1
+       draggable 0
+       style DayZNormal
+       text "0"
+       font "gui/fonts/Metron-Bold22"
+       "text color" 0 0 0 1
+       "exact text" 1
+       text_proportion 0.8
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+    RichTextWidgetClass KRLongestShoot {
+     ignorepointer 0
+     position 208.086 248.925
+     size 48.7632 24.0752
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron18"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRZombieKills {
+     clipchildren 0
+     ignorepointer 0
+     position 607.09601 212.96799
+     size 48.9296 23.1143
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRWolfKills {
+     clipchildren 0
+     ignorepointer 0
+     position 183.312 353.45297
+     size 49.1296 22.6839
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRBearKills {
+     clipchildren 0
+     ignorepointer 0
+     position 183.778 384.65298
+     size 48.712 22.3511
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRBoarKills {
+     clipchildren 0
+     ignorepointer 0
+     position 182.989 415.27802
+     size 48.7872 23.4247
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRDoeKills {
+     clipchildren 0
+     ignorepointer 0
+     position 183.48999 448.362
+     size 49.3232 22.7015
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRRoebuckKills {
+     clipchildren 0
+     ignorepointer 0
+     position 183.88301 480.96799
+     size 49.3232 23.5079
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRPigKills {
+     clipchildren 0
+     ignorepointer 0
+     position 183.48999 512.14893
+     size 49.7168 23.9207
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+     wrap 0
+    }
+    RichTextWidgetClass KRStagKills {
+     clipchildren 0
+     ignorepointer 0
+     position 439.728 353.80798
+     size 48.5552 23.0087
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRHindKills {
+     clipchildren 0
+     ignorepointer 0
+     position 439.63202 384.45599
+     size 49.2272 23.1527
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRBullKills {
+     clipchildren 0
+     ignorepointer 0
+     position 438.91202 415.01602
+     size 49.4192 23.9207
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRCowKills {
+     clipchildren 0
+     ignorepointer 0
+     position 438.24002 447.67999
+     size 50.7632 24.0647
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRbillygoatKills {
+     clipchildren 0
+     ignorepointer 0
+     position 439.76602 481.362
+     size 48.632 23.1143
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRgoatKills {
+     clipchildren 0
+     ignorepointer 0
+     position 439.37299 513.33002
+     size 49.0448 22.6823
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRRoosterKills {
+     clipchildren 0
+     ignorepointer 0
+     position 678.38599 353.54401
+     size 49.5248 22.3367
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRHenKills {
+     clipchildren 0
+     ignorepointer 0
+     position 678.89404 384.56201
+     size 47.4896 23.3543
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KRRamKills {
+     clipchildren 0
+     ignorepointer 0
+     position 678.89404 415.54401
+     size 48.5072 22.3367
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+    RichTextWidgetClass KREweKills {
+     clipchildren 0
+     ignorepointer 0
+     position 678.38599 448.04001
+     size 48.872 23.1719
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     text "0"
+     font "gui/fonts/Metron-Bold22"
+     "text color" 0 0 0 1
+     "exact text" 1
+     "text halign" center
+     "text valign" center
+    }
+   }
+  }
+ }
+}

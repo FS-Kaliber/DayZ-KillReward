@@ -1,0 +1,230 @@
+FrameWidgetClass rootFrame {
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass PanelWidget4 {
+   clipchildren 1
+   ignorepointer 0
+   color 0.3608 0.3608 0.3608 0.3098
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   style blank
+  }
+  PanelWidgetClass PanelWidget0 {
+   ignorepointer 1
+   color 0.2627 0.2627 0.2667 0.8196
+   position 0 0
+   size 1600 800
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style DayZDefaultPanel
+   {
+    PanelWidgetClass PanelWidget1 {
+     ignorepointer 1
+     color 0.2314 0.2314 0.2314 1
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     style blank
+     {
+      PanelWidgetClass PanelWidget3 {
+       ignorepointer 1
+       color 0.749 0 0 1
+       position 0 70
+       size 0.95 48
+       halign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       style DayZDefaultPanelSides
+       {
+        TextWidgetClass rank {
+         ignorepointer 1
+         position 0 0
+         size 0.08 1
+         valign center_ref
+         hexactpos 0
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text " Rank"
+         "text valign" center
+        }
+        TextWidgetClass name {
+         ignorepointer 1
+         position 0.07945 -0
+         size 0.45 1
+         valign center_ref
+         hexactpos 0
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "Spielername"
+         "text valign" center
+        }
+        TextWidgetClass kills {
+         ignorepointer 1
+         position 0.53053 -0
+         size 0.17 1
+         valign center_ref
+         hexactpos 0
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "ZKills"
+         "text valign" center
+        }
+        TextWidgetClass deaths {
+         ignorepointer 1
+         position 0.7 0
+         size 0.15 1
+         valign center_ref
+         hexactpos 0
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "Tode"
+         "text valign" center
+        }
+        TextWidgetClass kd {
+         ignorepointer 1
+         position 0.85 0
+         size 0.15 1
+         valign center_ref
+         hexactpos 0
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "KD"
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass PanelWidget2 {
+     ignorepointer 1
+     color 0.4314 0.4314 0.4314 0.4471
+     position 0 15
+     size 0.95 48
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style editor_quad_dark
+     {
+      TextWidgetClass heading {
+       ignorepointer 1
+       size 1 1
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       text " Leaderboard - Top Players"
+       "text valign" center
+      }
+      TextWidgetClass time {
+       ignorepointer 1
+       size 500 25
+       halign right_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       text "00.00.0000 00:00 "
+       "text halign" right
+      }
+     }
+    }
+    WrapSpacerWidgetClass playerList {
+     ignorepointer 1
+     position 0 123.356
+     size 0.95 0.803
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+    }
+    ButtonWidgetClass FSImage {
+     visible 0
+     disabled 0
+     clipchildren 1
+     ignorepointer 1
+     color 0 0 0 0
+     position 39.4077 26.257
+     size 100 100
+     halign right_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style MainMenu
+     {
+      ImageWidgetClass FSButton {
+       visible 1
+       disabled 0
+       clipchildren 1
+       inheritalpha 0
+       ignorepointer 1
+       color 0 0 0 0
+       position 1.95943 1.95945
+       size 0.95 0.95
+       halign center_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       scaled 1
+       imageTexture "{5C9A3557E60EF2F4}KillReward/gui/images/fshand.edds"
+       mode blend
+       "src alpha" 1
+       "no wrap" 0
+       stretch 1
+       "flip u" 0
+       "Transition width" 0.046
+       Progress 0
+      }
+     }
+    }
+    RichTextWidgetClass PlayerOnline {
+     ignorepointer 1
+     position 42.8673 717.58704
+     size 0.56578 0.0579
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     text ""
+    }
+   }
+  }
+ }
+}

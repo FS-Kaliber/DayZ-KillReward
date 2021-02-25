@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modded_inputs>
+    <inputs>
+        <actions>
+            <input name="UAKillRewardPanel" loc="KillReward Panel" />
+        </actions>
+		<actions>
+            <input name="UALBMOpenLeaderboard" loc="Open Leaderboard" />
+			<!--------------------->
+        </actions>
+    </inputs>
+	
+    <preset>
+        <input name="UAKillRewardPanel">
+            <btn name="kJ"/>
+        </input>
+		<input name="UALBMOpenLeaderboard">
+            <btn name="kB"/>
+        </input>
+    </preset>
+
+</modded_inputs>
