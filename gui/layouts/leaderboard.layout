@@ -73,8 +73,8 @@ FrameWidgetClass rootFrame {
         }
         TextWidgetClass name {
          ignorepointer 1
-         position 0.07945 -0
-         size 0.45 1
+         position 0.07945 0
+         size 0.21 1
          valign center_ref
          hexactpos 0
          vexactpos 1
@@ -85,20 +85,20 @@ FrameWidgetClass rootFrame {
         }
         TextWidgetClass kills {
          ignorepointer 1
-         position 0.53053 -0
+         position 0.28957 0
          size 0.17 1
          valign center_ref
          hexactpos 0
          vexactpos 1
          hexactsize 0
          vexactsize 0
-         text "ZKills"
+         text "Zombiekills"
          "text valign" center
         }
         TextWidgetClass deaths {
          ignorepointer 1
-         position 0.7 0
-         size 0.15 1
+         position 0.59039 -0.7496
+         size 0.1 1
          valign center_ref
          hexactpos 0
          vexactpos 1
@@ -109,14 +109,38 @@ FrameWidgetClass rootFrame {
         }
         TextWidgetClass kd {
          ignorepointer 1
-         position 0.85 0
-         size 0.15 1
+         position 0.69055 -0.00001
+         size 0.1 1
          valign center_ref
          hexactpos 0
          vexactpos 1
          hexactsize 0
          vexactsize 0
          text "KD"
+         "text valign" center
+        }
+        TextWidgetClass kills0 {
+         ignorepointer 1
+         position 0.45986 0.00001
+         size 0.13 1
+         valign center_ref
+         hexactpos 0
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "Playerkills"
+         "text valign" center
+        }
+        TextWidgetClass kd0 {
+         ignorepointer 1
+         position 0.79044 0.14465
+         size 0.21 1
+         valign center_ref
+         hexactpos 0
+         vexactpos 1
+         hexactsize 0
+         vexactsize 0
+         text "Punkte"
          "text valign" center
         }
        }

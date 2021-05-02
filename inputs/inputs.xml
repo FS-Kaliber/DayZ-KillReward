@@ -3,20 +3,17 @@
     <inputs>
         <actions>
             <input name="UAKillRewardPanel" loc="KillReward Panel" />
-        </actions>
-		<actions>
             <input name="UALBMOpenLeaderboard" loc="Open Leaderboard" />
-			<!--------------------->
         </actions>
-    </inputs>
-	
+    </inputs>	
     <preset>
         <input name="UAKillRewardPanel">
-            <btn name="kJ"/>
-        </input>
+            <btn name="kJ" />
+		</input>	
 		<input name="UALBMOpenLeaderboard">
-            <btn name="kB"/>
+            <btn name="kB" >
+			 <event name="hold" />
+			</btn>
         </input>
     </preset>
-
 </modded_inputs>

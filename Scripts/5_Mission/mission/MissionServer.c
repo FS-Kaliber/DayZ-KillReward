@@ -15,6 +15,7 @@ modded class MissionServer extends MissionBase
 	{
 		super.OnInit();
 		GetKillReward();
+		
 		GetRPCManager().AddRPC( "KR", "RPCRequestKRPlayerData", this, SingeplayerExecutionType.Both );		
         GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLaterByName(this, "UpdateAllKRPlayersSettings", 600 * 1000, true);	
 		GetKillReward().KRLoadAllPlayers();		

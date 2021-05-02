@@ -22,20 +22,15 @@ modded class MissionGameplay extends MissionBase
         if ( !ctx.Read( data ) ) return;
         ref array<KillRewardPlayer> tempPlayers = new array<KillRewardPlayer>;
         tempPlayers.Copy(data.param2);
-        int i = 0;
+        int i = 0;		
 		
-       if (!m_KR_OnlinePlayer){
+        
 		m_KR_OnlinePlayer = new array<string>;
-	   }
+		m_KR_OnlinePlayer.Copy(data.param1);
 		
-		for (int io = 0; io < data.param1.Count(); io++){
-            if(data.param1.Get(io))
-            m_KR_OnlinePlayer.Insert(data.param1.Get(io));
-			}
-             
+     
         m_KillReward_Players = new array<ref KillRewardPlayer>;
- 				
-				
+ 								
 		for (i = 0; i < tempPlayers.Count(); i++){
             if (tempPlayers.Get(i)){		
 				bool Finished = false;
@@ -45,13 +40,13 @@ modded class MissionGameplay extends MissionBase
 					int TopPlayerIndex = 0;
 					int ii = 0;
 					while (tempPlayers.Count() != 0 && ii < tempPlayers.Count()){
-						if (tempPlayers.Get(ii).GetKD() > TopPlayer.GetKD()){
+						if (tempPlayers.Get(ii).KRGetPoints() > TopPlayer.KRGetPoints()){
 							TopPlayer = tempPlayers.Get(ii);
 							TopPlayerIndex = ii;
 						}
 						ii++;
 					}
-					if (tempPlayers.Count() == 0 && TopPlayer.GetKD() <= 0.0 ){
+					if (tempPlayers.Count() == 0 && TopPlayer.KRGetPoints() <= 0.0 ){
 						Finished = true;
 					} else {
 						m_KillReward_Players.Insert(TopPlayer);
@@ -69,12 +64,10 @@ modded class MissionGameplay extends MissionBase
 		if (!GetGame() || !GetGame().GetUIManager())
 			return;
 		if (GetGame().GetUIManager().GetMenu() == NULL) {
-			GetRPCManager().SendRPC("KR", "RPCSyncAllData", NULL, true);
 			GetGame().GetUIManager().ShowScriptedMenu(new LeaderboardGUI(), NULL);
 			GetGame().GetCallQueue(CALL_CATEGORY_GUI).CallLaterByName(m_LeaderboardGUI, "dataupdate", 400, false); 
 			LockControlsLeaderboard();
 		} else {
-			GetRPCManager().SendRPC("KR", "RPCSyncAllData", NULL, true);
 			LeaderboardGUI gui;
 			GetGame().GetCallQueue(CALL_CATEGORY_GUI).CallLaterByName(m_LeaderboardGUI, "dataupdate", 400, false); 
 			if (Class.CastTo(gui, GetGame().GetUIManager().GetMenu())) {

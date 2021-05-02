@@ -3,6 +3,7 @@ class KillRewardPlayer : RestCallback
 	//Default Values
     string PlayerID = "";
 	string PlayerName;
+	int KRPlayerPoints = 0;
 	int PlayerDeaths = 0;
 	ref array< ref KRStat > Stats = new ref array< ref KRStat >;
 	void KillRewardPlayer(string pID = "") 
@@ -62,14 +63,15 @@ class KillRewardPlayer : RestCallback
 	
 	float GetKD() {
 		if (PlayerDeaths == 0)
-			return ((float)getStat("ZombieKill")) / 100;
-		float kd = (((float) getStat("ZombieKill")) / ((float) PlayerDeaths)) / 100;		
-		kd *= 100;
+			return ((float)getStat("PlayerKill"));
+		float kd = (((float) getStat("PlayerKill")) / ((float) PlayerDeaths));		
+		kd *= 10;
 		kd = Math.Round(kd);
-		kd /= 100;
+		kd /= 10;
 		return kd;
 	}
-		
+	
+	
 	bool NewAction(string actionName, int shoot){
 
 		int statID = -1;
@@ -101,14 +103,28 @@ class KillRewardPlayer : RestCallback
 		
 	}
 
+    int KRGetPoints()
+		{
+			return KRPlayerPoints;
+		}
+
+	void KRPoints(int points){	
+		KRPlayerPoints = KRPlayerPoints + points;	
+	}
+		
+	void KRLosePoints(int points){	
+		KRPlayerPoints = KRPlayerPoints - points;	
+	}
+	
 		void OnDeath(){
 
 			PlayerDeaths++;
+			KRPlayerPoints = KRPlayerPoints - g_Game.KRconfig.KillRewardBASE.PointLoseByDeath;
 			for ( int j =0; j < Stats.Count(); j++ ){
 				Stats.Get(j).Stat = 0;
 				
 			}
-		
+		 
 		
 	}
 	

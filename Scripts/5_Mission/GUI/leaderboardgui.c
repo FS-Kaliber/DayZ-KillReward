@@ -6,7 +6,6 @@ class LeaderboardGUI extends UIScriptedMenu {
 	TextWidget				txtTime;
 	TextWidget				txtHeading;
 	TextWidget				PlayerOnline;
-	TextWidget				Pname;
 	
 	Widget 					entryWidget;
 	Widget 					FSLink;
@@ -50,17 +49,21 @@ class LeaderboardGUI extends UIScriptedMenu {
 					prank.SetText(" " + (i + 1)); // Rank
 					TextWidget pname = TextWidget.Cast(entryWidget.FindAnyWidget("name_text"));
 					pname.SetText(""+p.PlayerName); // Name
-					TextWidget pkills = TextWidget.Cast(entryWidget.FindAnyWidget("kills_text"));
-					pkills.SetText(""+p.getStat("ZombieKill")); // PlayerKills
+					TextWidget zkills = TextWidget.Cast(entryWidget.FindAnyWidget("zkills_text"));
+					zkills.SetText(""+p.getStat("ZombieKill")); // ZombieKills
+					TextWidget pkills = TextWidget.Cast(entryWidget.FindAnyWidget("pkills_text"));
+					pkills.SetText(""+p.getStat("PlayerKill")); // PlayerKills					
 					TextWidget pdeaths = TextWidget.Cast(entryWidget.FindAnyWidget("deaths_text"));
 					pdeaths.SetText(""+p.PlayerDeaths); // Deaths
 					TextWidget pkd = TextWidget.Cast(entryWidget.FindAnyWidget("kd_text"));
 					pkd.SetText(""+p.GetKD()); // KD	
+					TextWidget krpoints = TextWidget.Cast(entryWidget.FindAnyWidget("points_text"));
+					krpoints.SetText(""+p.KRGetPoints()); // Points	
 					
 					
 					
 					
-		
+		            if( m_KR_OnlinePlayer ){
 					for ( int i1 = 0; i1 < m_KR_OnlinePlayer.Count(); ++i1 )
 					{
 
@@ -73,7 +76,8 @@ class LeaderboardGUI extends UIScriptedMenu {
 									
 								} 
 									
-						}			
+					}	
+				}				
 			}
 	}
 				
@@ -113,21 +117,7 @@ class LeaderboardGUI extends UIScriptedMenu {
 		string returned_message = RSGetDate() + " " + RSGetTime();
 		return returned_message;
 	}	
-	
-	
-	override bool OnClick(Widget w, int x, int y, int button) {
-		if (w == FSLink) {
-			////Print("Opening FS Link...");
-			GetGame().OpenURL("https://www.friendly-survivors.de");
-			return true;
-		} else if (w == FSButton) {
-			////Print("Opening FS Link");
-			GetGame().OpenURL("https://www.friendly-survivors.de");
-			return true;
-		}
-		return false;
-	}
-	
+		
 	
 		override bool OnMouseEnter( Widget w, int x, int y )
 	{		
